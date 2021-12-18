@@ -5,33 +5,56 @@
     padding: 6rem;
     padding-left: 9rem;
     border-radius: 3px;
-    background-color: white;
+    background-color: rgba($color-text-white, .55);
     font-size: $default-font-size;
     transform: skewX(-12deg);
-
-    & > * {
-        transform: skewX(12deg);
-    }
 
     &__shape {
         width: 15rem;
         height: 15rem;
         float: left;
         shape-outside: circle(50% at 50% 50%);
-        background-color: orangered;
+        transform: translateX(-3rem) skewX(12deg);
 
         clip-path: circle(50% at 50% 50%);
-        transform: translateX(-3rem) skewX(12deg);
         background-size: cover;
+        position: relative;
+        backface-visibility: hidden;
+    }
 
-        img {
+    &__img {
             height: 100%;
-            width: 100%;
-
-        }
+            backface-visibility: hidden;
+            transition: all .6s;
+            transform: scale(1.4) translateX(-3rem);
     }
 
     &__text {
         transform: skewX(12deg)
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(20%);
+        color: $color-text-white;
+        font-size: 1.7rem;
+        text-align: center;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: all .6s;
+        backface-visibility: hidden;
+
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: scale(1) translateX(-4rem);
+        filter: blur(3px) brightness(80%);
     }
 }
