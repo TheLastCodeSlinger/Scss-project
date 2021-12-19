@@ -8,10 +8,12 @@ import Stories from './components/stories';
 import Booking from './components/booking';
 
 import Footer from './components/footer';
+import Navigation from './components/navigation';
 
 const App = () => {
   return (
-    <>
+    <body>
+      <Navigation />
       <Header />
       <main>
         <Section />
@@ -21,7 +23,7 @@ const App = () => {
         <Booking />
       </main>
       <Footer />
-    </>
+    </body>
   );
 };
 
