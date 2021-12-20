@@ -1,5 +1,4 @@
-import Logo from ".././img/logo2.jpg";
-
+import Logo from '.././img/logo2.jpg';
 
 const Header = () => (
   <header className="header">
@@ -16,4 +15,4 @@ const Header = () => (
   </header>
 );
 
-export default Header
+export default Header;

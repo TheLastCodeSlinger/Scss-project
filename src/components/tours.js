@@ -1,5 +1,5 @@
 const SectionTours = () => (
-  <section className="section-tours">
+  <section className="section-tours" id="section-tours">
     <div>
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="heading-secondary">Most popular tours</h2>
@@ -10,9 +10,7 @@ const SectionTours = () => (
             <div className="card__side card__side--front">
               <div className="card__picture card__picture-1"></div>
               <h4 className="card__heading">
-                <span className="card__heading-span card__heading-span--1">
-                  heading AWESOME
-                </span>
+                <span className="card__heading-span card__heading-span--1">heading AWESOME</span>
               </h4>
               <div className="card__details">
                 <ul>
@@ -30,7 +28,9 @@ const SectionTours = () => (
                   <p className="card__price-only">only</p>
                   <p className="card__price-value">299$</p>
                 </div>
-                <button className="button">Book now</button>
+                <a href="#popup" className="btn-text">
+                  Book now
+                </a>
               </div>
             </div>
           </div>
@@ -40,9 +40,7 @@ const SectionTours = () => (
             <div className="card__side card__side--front">
               <div className="card__picture card__picture-2"></div>
               <h4 className="card__heading">
-                <span className="card__heading-span card__heading-span--2">
-                  heading AWESOME
-                </span>
+                <span className="card__heading-span card__heading-span--2">heading AWESOME</span>
               </h4>
               <div className="card__details">
                 <ul>
@@ -60,7 +58,9 @@ const SectionTours = () => (
                   <p className="card__price-only">only</p>
                   <p className="card__price-value">499$</p>
                 </div>
-                <button className="button">Book now</button>
+                <a href="#popup" className="btn-text">
+                  Book now
+                </a>
               </div>
             </div>
           </div>
@@ -70,9 +70,7 @@ const SectionTours = () => (
             <div className="card__side card__side--front">
               <div className="card__picture card__picture-3"></div>
               <h4 className="card__heading">
-                <span className="card__heading-span card__heading-span--3">
-                  heading AWESOME
-                </span>
+                <span className="card__heading-span card__heading-span--3">heading AWESOME</span>
               </h4>
               <div className="card__details">
                 <ul>
@@ -90,7 +88,9 @@ const SectionTours = () => (
                   <p className="card__price-only">only</p>
                   <p className="card__price-value">799$</p>
                 </div>
-                <button className="button">Book now</button>
+                <a href="#popup" className="btn-text">
+                  Book now
+                </a>
               </div>
             </div>
           </div>

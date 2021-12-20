@@ -1,62 +1,62 @@
 .footer {
-    background-color: rgb(46, 46, 46);
-    padding: 10rem 0;
-    
-    &__logo-box {
-        text-align: center;
-        margin-bottom: 8rem;
+  background-color: rgb(46, 46, 46);
+  padding: 10rem 0;
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__logo {
+    width: 15rem;
+    height: auto;
+  }
+
+  &__navigation {
+    border-top: 1px solid lightgray;
+    padding-top: 2rem;
+    display: inline-block;
+    font-size: 1.4rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    margin: 0 0.3rem;
+    &:link,
+    &:visited {
+      color: $color-text-white;
+      background-color: rgb(46, 46, 46);
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s;
     }
 
-    &__logo {
-        width: 15rem;
-        height: auto;
+    &:hover,
+    &:active {
+      color: green;
+      box-shadow: 0 1rem 2rem rgb($color-black, 0.4);
+      transform: rotate(5deg) scale(1.3);
     }
+  }
 
-    &__navigation {
-        border-top: 1px solid lightgray;
-        padding-top: 2rem;
-        display: inline-block;
-        font-size: 1.4rem;
-    }
-
-    &__list {
-       list-style: none;
-    }
-
-    &__item {
-        display: inline-block;
-
-        &:not(:last-child) {
-            margin-right: 1.5rem;
-        }
-    }
-
-    &__link {
-        margin: 0 .3rem;
-        &:link,
-        &:visited {
-            color: $color-text-white;
-            background-color: rgb(46, 46, 46);
-            text-decoration: none;
-            text-transform: uppercase;
-            display: inline-block;
-            transition: all .2s;
-        }
-
-        &:hover,
-        &:active {
-            color: green;
-            box-shadow: 0 1rem 2rem rgb($color-black, .4);
-            transform: rotate(5deg) scale(1.3);
-        }
-    }
-
-    &__copyright {
-        border-top: 1px solid lightgray;
-        padding-top: 2rem;
-        color: $color-text-white;
-        width: 80%;
-        float: right;
-        font-size: 1.4rem;
-    }
+  &__copyright {
+    border-top: 1px solid lightgray;
+    padding-top: 2rem;
+    color: $color-text-white;
+    width: 80%;
+    float: right;
+    font-size: 1.4rem;
+  }
 }

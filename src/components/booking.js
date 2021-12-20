@@ -8,49 +8,27 @@ const Booking = () => (
               <h2 className="heading-secondary">Start booking now!</h2>
             </div>
             <div className="form__group">
-              <input
-                type="text"
-                className="form__input"
-                placeholder="Full Name"
-                required
-                id="name"
-              />
+              <input type="text" className="form__input" placeholder="Full Name" required id="name" />
               <label for="name" className="form__label">
                 Full Name
               </label>
             </div>
             <div className="form__group">
-              <input
-                type="email"
-                className="form__input"
-                placeholder="Email address"
-                required
-                id="email"
-              />
+              <input type="email" className="form__input" placeholder="Email address" required id="email" />
               <label for="email" className="form__label">
                 Email
               </label>
             </div>
             <div className="form__group">
               <div className="form__radio-group">
-                <input
-                  type="radio"
-                  className="form__radio-input"
-                  id="small"
-                  name="size"
-                />
+                <input type="radio" className="form__radio-input" id="small" name="size" />
                 <label for="small" className="form__radio-label">
                   <span className="form__radio-button"></span>
                   Small tour group
                 </label>
               </div>
               <div className="form__radio-group">
-                <input
-                  type="radio"
-                  className="form__radio-input"
-                  id="large"
-                  name="size"
-                />
+                <input type="radio" className="form__radio-input" id="large" name="size" />
                 <label for="large" className="form__radio-label">
                   <span className="form__radio-button"></span>
                   Large tour group
@@ -58,9 +36,7 @@ const Booking = () => (
               </div>
             </div>
             <div className="form__group u-margin-top-medium">
-              <button action="#" className="button button-green">
-                Next step
-              </button>
+              <button className="button button-green">Next step</button>
             </div>
           </form>
         </div>
@@ -69,4 +45,4 @@ const Booking = () => (
   </section>
 );
 
-export default Booking
+export default Booking;

@@ -1,8 +1,8 @@
-import VideoOne from ".././img/video.mp4";
-import VideoTwo from ".././img/video.webm";
+import VideoOne from '.././img/video.mp4';
+import VideoTwo from '.././img/video.webm';
 
-import Asia from ".././img/nat-9.jpg";
-import Person from ".././img/nat-8.jpg";
+import Asia from '.././img/nat-9.jpg';
+import Person from '.././img/nat-8.jpg';
 
 const Stories = () => (
   <section className="section-stories">
@@ -24,15 +24,11 @@ const Stories = () => (
           <figcaption className="story__caption">Asia Girl</figcaption>
         </figure>
         <div className="story__text">
-          <h3 className="heading-tertiary u-margin-bottom-small">
-            I had the best week ever with my family
-          </h3>
+          <h3 className="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis
-            nostrud exercitation
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud
+            exercitation
           </p>
         </div>
       </div>
@@ -45,15 +41,11 @@ const Stories = () => (
           <figcaption className="story__caption">Asia Girl</figcaption>
         </figure>
         <div className="story__text">
-          <h3 className="heading-tertiary u-margin-bottom-small">
-            I had the best week ever with my family
-          </h3>
+          <h3 className="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis
-            nostrud exercitation
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud
+            exercitation
           </p>
         </div>
       </div>

@@ -1,0 +1,105 @@
+.popup {
+  position: fixed;
+  z-index: 2500;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(black, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content {
+    width: 75%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.25);
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    border-radius: 3px;
+    display: table;
+    -webkit-transform: translate(-50%, -50%) scale(0.25);
+    -moz-transform: translate(-50%, -50%) scale(0.25);
+    -ms-transform: translate(-50%, -50%) scale(0.25);
+    -o-transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.5s 0.3s;
+    -webkit-transition: all 0.5s 0.3s;
+    -moz-transition: all 0.5s 0.3s;
+    -ms-transition: all 0.5s 0.3s;
+    -o-transition: all 0.5s 0.3s;
+    opacity: 0;
+  }
+
+  &:target &__content {
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    -o-transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  &__left {
+    width: 33.3333%;
+    display: table-cell;
+  }
+
+  &__right {
+    width: 66.6666%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: black;
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: green;
+    }
+  }
+
+  &__text {
+    font-size: 1.5rem;
+
+    -moz-columns: 2;
+    columns: 2;
+    -moz-column-gap: 4rem;
+    column-gap: 4rem;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+}

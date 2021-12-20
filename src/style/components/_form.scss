@@ -59,7 +59,7 @@
   }
 
   &__radio-input {
-      display: none;
+    display: none;
   }
   &__radio-button {
     height: 3rem;
@@ -74,7 +74,7 @@
     &::after {
       height: 1.3rem;
       width: 1.3rem;
-      content: "";
+      content: '';
       display: block;
       border-radius: 50%;
       position: absolute;
@@ -83,11 +83,11 @@
       transform: translate(-50%, -50%);
       background-color: $color-background-darkgreen;
       opacity: 0;
-      transition: all .2s;
+      transition: all 0.2s;
     }
   }
 
   &__radio-input:checked ~ &__radio-label &__radio-button::after {
-      opacity: 1;
+    opacity: 1;
   }
 }

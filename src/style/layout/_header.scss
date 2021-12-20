@@ -1,27 +1,28 @@
 .header {
-    background-image: linear-gradient(to right bottom, rgba($color-background-lightgreen, 0.7), rgba($color-background-darkgreen, 0.7)) ,url(../../img/img1.jpg);
-    background-size: cover;
-    height: 95vh;
-    top: 0;
-    left: 0;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    position: relative;
-  
-    &__img-container {
-      top: 3rem;
-      left: 3rem;
-      position: absolute;
-    }
-    
-    &__img-container img {
-      height: 4.5rem;
-    }
-    
-    &__center-container {
-      position: absolute;
-      left: 50%;
-      top: 40%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
+  background-image: linear-gradient(to right bottom, rgba($color-background-lightgreen, 0.7), rgba($color-background-darkgreen, 0.7)),
+    url(../../img/img1.jpg);
+  background-size: cover;
+  height: 95vh;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: relative;
+
+  &__img-container {
+    top: 3rem;
+    left: 3rem;
+    position: absolute;
   }
+
+  &__img-container img {
+    height: 4.5rem;
+  }
+
+  &__center-container {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

@@ -10,6 +10,8 @@ import Booking from './components/booking';
 import Footer from './components/footer';
 import Navigation from './components/navigation';
 
+import Popup from './components/popup';
+
 const App = () => {
   return (
     <body>
@@ -23,6 +25,7 @@ const App = () => {
         <Booking />
       </main>
       <Footer />
+      <Popup />
     </body>
   );
 };
