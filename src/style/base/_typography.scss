@@ -1,6 +1,5 @@
 body {
   line-height: 1.7;
-  padding: 3rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,7 +15,6 @@ code {
   text-transform: uppercase;
 
   backface-visibility: hidden;
-
   &--primary {
     display: block;
     line-height: 1.7;
@@ -26,6 +24,11 @@ code {
 
     animation: moveHeaderRight 3s ease-in 0.3s;
     animation-fill-mode: backwards;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--secondary {
@@ -36,6 +39,11 @@ code {
 
     animation: moveHeaderLeft 3s ease-in 0.4s;
     animation-fill-mode: backwards;
+
+    @include respond(phone) {
+      letter-spacing: .5rem;
+      font-size: 3rem;
+    }
   }
 }
 
@@ -50,6 +58,14 @@ code {
   -webkit-background-clip: text;
   background-clip: text;
   transition: all 0.4s;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     transform: skewY(2deg) skewX(5deg) scale(1.2);
